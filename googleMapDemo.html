@@ -3,31 +3,22 @@
 
 <head>
 
-    <link rel="stylesheet" href="googleMap.css"></link>
-    <!--<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>--> <!-- Firebase 2.3.2 -->    
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
-    <script>
-        // Initialize Firebase   
-        var config = {      //Get information from console.firebase.google.com/
-            apiKey: "[YOUR FIREBASE PROJECT apiKey]",
-            authDomain: "[YOUR FIREBASE PROJECT authDomain]",
-            databaseURL: "[YOUR FIREBASE PROJECT DatabaseURL]",
-            projectId: "[YOUR FIREBASE PROJECT ProjectId]",
-            storageBucket: "[YOUR FIREBASE PROJECT storageBucket]",
-            messagingSenderId: "[YOUR FIREBASE PROJECT messagingSenderId]"
-        };
-        firebase.initializeApp(config);
-    </script>
-
+    <link rel="stylesheet" href="googleMap.css">
+    </link>
 
     <script src="googleMap.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=[YOUR GOOGLE MAP API KEY]&libraries=visualization&callback=initMap">
-    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=[apikeyhere]&libraries=visualization&callback=initMap">
+        </script>
 </head>
 
 <body>
     <div id="map"></div>
+    <input autofocus id="species" label="species" value="species">
+    <input autofocus id="description" label="description" value="description">
+    <p><button>Report Sighting</button></p>
 
 </body>
+<script src="spot.js"></script>
 
 </html>
